@@ -130,8 +130,3 @@ def load(p, seq_type):
     augmented_seqs = augmentation_combination(original_seqs, p, seq_type)
     augmented_seqs = list(set(augmented_seqs))
     return augmented_seqs
-if __name__ == '__main__':
-    MyACVP = load(p=0.2, seq_type='nonAVPs')
-    MyACVP.sort()
-    print(MyACVP)
-    print(f'After augmentation, ACVP: {len(MyACVP)} peptides')
